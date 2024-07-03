@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Fira Sans", sans-serif;
+    color: black;
+    background-color: white;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background-color: #3498db;
+}
+
+.heading {
+    font-size: 30px;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 8px 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav .sideMenuButton {
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    nav .sideMenuButton {
+        display: flex;
+    }
+
+    nav .navbar {
+        display: none;
+    }
+
+    .sideNavigationBar {
+        display: block;
+    }
+}
+
+.sideNavigationBar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #2980b9;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.sideNavigationBar a {
+    padding: 8px 8px 8px 40px;
+    display: block;
+    font-size: 25px;
+    color: #d1d1d1;
+    text-decoration: none;
+}
+
+.sideNavigationBar a:hover {
+    color: white;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 20px;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 5%;
+}
+
+.side1 h1 {
+    font-size: 40px;
+    color: #2980b9;
+}
+
+.side2 img {
+    width: 100%;
+}
+
+@media (max-width: 980px) {
+    .side1 h1 {
+        font-size: 30px;
+    }
+
+    .line {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+section .title span {
+    font-size: 25px;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactMenu input,
+.contactMenu button {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #3498db;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
