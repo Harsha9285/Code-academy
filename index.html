@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Code Academy</title>
+</head>
+<body>
+    <nav>
+        <div class="heading">Code Academy</div>
+        <span class="sideMenuButton" onclick="openNavbar()">&#9776;</span>
+        <div class="navbar">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#SignUp">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="sideNavigationBar" id="sideNavigationBar">
+        <a href="#" class="closeButton" onclick="closeNavbar()">&#x274C;</a>
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#SignUp">Sign Up</a>
+    </div>
+
+    <div class="line" id="Home">
+        <div class="side1">
+            <h1>Welcome to Code Academy</h1>
+            <button><a href="https://www.example.com">Start Learning</a></button>
+        </div>
+        <div class="side2">
+            <img src="https://via.placeholder.com/500" alt="Code Academy">
+        </div>
+    </div>
+
+    <section class="about" id="About">
+        <div class="content">
+            <div class="title"><span>Courses</span></div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="topic"><a href="">Python</a></div>
+                    <p>Learn Python programming.</p>
+                </div>
+                <div class="box">
+                    <div class="topic"><a href="">Web Development</a></div>
+                    <p>Build web applications.</p>
+                </div>
+                <div class="box">
+                    <div class="topic"><a href="">Data Science</a></div>
+                    <p>Master Data Science.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="SignUp">
+        <div class="content">
+            <div class="title"><span>Sign Up</span></div>
+            <div class="contactMenu">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <input type="password" placeholder="Your Password">
+                <button>Sign Up</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span>Created By <a href="https://www.example.com" target="_blank">Code Academy</a></span>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
